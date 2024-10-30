@@ -1,0 +1,70 @@
+
+# Chameleon
+
+Chameleon is a website developed for **Ea Estudio**, a company focused on [describe the company’s field, such as aesthetics, design, or another focus]. The purpose of this project is to provide a modern and responsive interface that highlights the company’s services, portfolio, and key information.
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [How to Use](#how-to-use)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Overview
+
+This website was designed to offer clients an engaging and informative visual experience, providing easy access to the services of **Ea Estudio**. The site structure prioritizes intuitive navigation and a visually appealing presentation of the services offered, using modern frontend and backend technologies.
+
+## Features
+
+- **Home Page**: Provides a summary of the main services and the company’s unique value.
+- **Portfolio**: Dedicated section for past projects, including images and descriptions showcasing the company’s expertise.
+- **Services**: Detailed explanations of each service offered by Ea Estudio.
+- **Contact**: Contact form to facilitate communication with clients and potential partners.
+- **Responsiveness**: Responsive layout to ensure a consistent experience on mobile devices, tablets, and desktops.
+
+## Technologies Used
+
+- **Frontend**:
+  - HTML5 and CSS3 for the structure and styling of pages.
+  - JavaScript for dynamic functionalities and interactivity.
+- **Backend**:
+  - PHP for managing contact forms and other server-side functionalities.
+
+## Installation
+
+To install and run the project locally, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Luiz-DevBack/chameleon.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd chameleon
+   ```
+3. Ensure you have a local server such as XAMPP, WAMP, or an environment with PHP support.
+4. Place the files in the correct folder for your local server (e.g., `htdocs` in XAMPP).
+5. Start the local server and access `http://localhost/chameleon` in your browser.
+
+## How to Use
+
+1. **Explore the site**: Browse the pages and sections to understand the content presented.
+2. **Test the contact form**: Use the form to send test messages and verify the sending functionality (if configured).
+3. **Explore the services and portfolio sections**: See how each page is designed to highlight the company’s offerings.
+
+## Contributing
+
+Contributions are welcome! To contribute to the project:
+
+1. Fork the repository.
+2. Create a branch for your feature (`git checkout -b my-feature`).
+3. Make the desired changes and commit them (`git commit -m 'Add new feature'`).
+4. Push to the remote repository (`git push origin my-feature`).
+5. Open a pull request explaining your changes.
+
+## License
+
+This project is open-source and licensed under the terms of the MIT License.
