@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- Define o idioma da página como português brasileiro -->
+<head>
+    <meta charset="UTF-8" /> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta http-equiv="X-AU-Compatible" content="IE=edge" /> <!-- Garante a compatibilidade com versões mais antigas do IE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Define a viewport para responsividade em dispositivos móveis -->
+    
+    <!-- Link para o arquivo CSS que estiliza o calendário -->
+    <link rel="stylesheet" href="../style/styleCalendario.css">
+    
+    <!-- Link para o Font Awesome, usado para ícones como os de navegação no calendário -->
+    <link 
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+    />
+    
+    <title>Calendário</title> <!-- Título da página exibido na aba do navegador -->
+</head>
+<body>
+    <!-- Contêiner principal que envolve a estrutura do calendário -->
+    <div class="container">
+        <!-- Seção à esquerda, onde o calendário é exibido -->
+        <div class="left">
+            <div class="calendar">
+                <!-- Navegação do mês -->
+                <div class="month">
+                    <!-- Ícone de seta para navegar para o mês anterior -->
+                    <i class="fas fa-angle-left prev"></i> 
+                    <!-- Local onde o JS irá inserir o mês e o ano atual -->
+                    <div class="date"></div>
+                    <!-- Ícone de seta para navegar para o mês seguinte -->
+                    <i class="fa fa-angle-right next"></i>
+                </div>
+                
+                <!-- Nomes dos dias da semana -->
+                <div class="weekdays">
+                    <div>Dom</div>
+                    <div>Seg</div>
+                    <div>Ter</div>
+                    <div>Qua</div>
+                    <div>Qui</div>
+                    <div>Sex</div>
+                    <div>ab</div>
+                </div>
+                
+                <!-- Contêiner onde os dias serão gerados dinamicamente via JavaScript -->
+                <div class="days">
+                    <!-- Dias do mês serão inseridos dinamicamente aqui pelo JS -->
+                </div>
+                
+                <!-- Seção para navegação rápida por data ou voltar ao dia atual -->
+                <div class="goto-today">
+                    <!-- Entrada de data manual no formato mm/yyyy -->
+                    <div class="goto">
+                        <input type="text" placeholder="mm/yyyy" class="date-input">
+                        <button class="goto-btn">Ir</button> <!-- Botão para ir para a data inserida -->
+                    </div>
+                    <button class="today-btn">Hoje</button> <!-- Botão para voltar ao mês e dia atuais -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção à direita onde os eventos do dia selecionado são exibidos -->
+        <div class="right">
+            <!-- Exibição da data atual (ou selecionada) -->
+            <div class="today-date">
+                <div class="event-day">Qua</div> <!-- Nome do dia atual -->
+                <div class="event-date">11 Setembro 2024</div> <!-- Data completa -->
+            </div>
+            
+            <!-- Contêiner onde os eventos serão listados -->
+            <div class="events">
+                <!-- Eventos serão adicionados dinamicamente aqui via JavaScript -->
+            </div>
+            
+            <!-- Formulário para adicionar um novo evento -->
+            <div class="add-event-wrapper">
+                <!-- Cabeçalho do formulário com título e botão para fechar -->
+                <div class="add-event-header">
+                    <div class="title">Adicionar Evento</div>
+                    <i class="fas fa-times close"></i> <!-- Ícone de fechar o formulário -->
+                </div>
+                
+                <!-- Corpo do formulário de adição de eventos -->
+                <div class="add-event-body">
+                    <!-- Campo para inserir o nome do evento -->
+                    <div class="add-event-input">
+                        <input type="text" placeholder="Nome do Evento" class="event-name"/>
+                    </div>
+                    <!-- Campo para inserir o horário de início do evento -->
+                    <div class="add-event-input">
+                        <select 
+                        type="text" 
+                        placeholder="Horário de Início"
+                        class="event-time-from">
+                    </select>
+                    </div>
+                    <!-- Campo para inserir o horário de término do evento -->
+                    <div class="add-event-input">
+                        <select 
+                        type="text" 
+                        placeholder="Horário de Término"
+                        class="event-time-to">
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- Rodapé do formulário com botão para adicionar o evento -->
+                <div class="add-event-footer">
+                    <div class="add-event-btn">Adicionar Evento</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Botão flutuante para abrir o formulário de adição de evento -->
+        <button class="add-event">
+            <i class="fas fa-plus"></i> <!-- Ícone de "mais" para adicionar eventos -->
+        </button>
+    </div>
+
+    <!-- Importa o script JS que manipula as interações com o calendário -->
+    <script src="../script/js/scriptOnClick.js"></script>
+</body>
+</html>
